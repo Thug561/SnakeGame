@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="game-container"></div>
+
+<div id="gui">
+    <button id="playButton">Play</button>
+    <button id="exitButton">Exit</button>
+    <button id="menuButton" style="display:none;">Menu</button>
+    <label id="bestScore">Best Score: 0</label>
+    <label id="currentScore">Current Score: 0</label>
+    <div id="modeList">
+        <input type="radio" id="classicMode" name="gameMode" value="classic" checked> Classic<br>
+        <input type="radio" id="godMode" name="gameMode" value="god"> God Mode<br>
+        <input type="radio" id="wallsMode" name="gameMode" value="walls"> Walls<br>
+        <input type="radio" id="portalMode" name="gameMode" value="portal"> Portal<br>
+        <input type="radio" id="speedMode" name="gameMode" value="speed"> Speed<br>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

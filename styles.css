@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+#game-container {
+    position: relative;
+    width: 400px;  /* Ширина і висота поля */
+    height: 400px;
+    background-color: #ffffff;
+    border: 2px solid #333;  /* Межа для поля гри */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.snake {
+    background-color: green;  /* Колір змійки */
+    position: absolute;
+    width: 20px;  /* Ширина одного сегмента змійки */
+    height: 20px;  /* Висота одного сегмента змійки */
+}
+
+.food {
+    background-color: red;  /* Колір їжі */
+    position: absolute;
+    width: 20px;
+    height: 20px;
+}
+
+#gui {
+    margin-top: 20px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;  /* Колір кнопок */
+    color: white;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;  /* Темніший колір кнопки при наведенні */
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    font-size: 18px;
+}
